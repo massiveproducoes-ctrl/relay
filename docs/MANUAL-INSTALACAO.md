@@ -11,7 +11,7 @@ Confirme que você tem tudo isto. Se faltar algum item, resolva antes de seguir.
 - [ ] **Um PC que fica ligado na tomada** durante o uso. Na bateria ele dorme em 3 minutos e o relay para de responder.
 - [ ] **Git para Windows** (`git --version` num PowerShell devolve uma versão).
 - [ ] **Node.js 24 ou mais recente** (`node --version`). O projeto declara `node >= 24`.
-- [ ] **Python 3** instalado e no PATH (`python --version`). É usado para a transcrição de áudio.
+- [ ] **Python 3.14** instalado e no PATH (`python --version`). É a versão em que o relay foi testado. Serve para criar o `.venv` da transcrição de áudio (passo 2).
 - [ ] **Claude Code** instalado (`claude --version`), logado com a **sua** conta Claude, pelo login oficial.
 - [ ] **Uma conta de Telegram** e um **bot próprio** (passo 3). Não use o bot do Pedro.
 - [ ] **App do Claude no celular**, com a mesma conta do PC.
@@ -106,6 +106,7 @@ Para o último item, rode `npm test` no PowerShell dentro de `C:\dev\vrx-relay`,
 - Comandos com barra (`/mcp`, `/plugin`, `/config`) e confirmações de pasta ou de servidor MCP só funcionam no terminal do PC, não chegam ao celular.
 - A permissão padrão do projeto é **manual**: toda ação que precisa de aprovação aparece no Telegram ou no app.
 - Ações proibidas pelo projeto, mesmo aprovadas: apagar arquivos (`rm`, `del`, `Remove-Item`), `git push`, `git reset --hard`, `npm publish`, instalação global e deploy. Se uma tarefa exigir alguma delas, pare e fale com o Pedro.
+- Isso inclui o **seu** `git push`: ele também é bloqueado no seu clone, de propósito. Não tente contornar. Combine com o Pedro como o seu trabalho chega ao GitHub.
 
 ## 8. O que não fazer
 
@@ -134,6 +135,7 @@ Para o último item, rode `npm test` no PowerShell dentro de `C:\dev\vrx-relay`,
 Isto está escrito para você não se surpreender. São pendências da Sprint 1, não erros seus.
 
 - **Só Windows.** O relay não roda em outro sistema.
+- **Braço sem chave:** o projeto já registra o servidor `braco` (modelo barato para tarefas braçais), mas sem chave. Ele aparece na lista e recusa qualquer chamada com o aviso "sem chave". Isso é esperado, não é erro de instalação.
 - **Caminho fixo:** o `.mcp.json` aponta para `C:\dev\vrx-relay`. Mudar a pasta exige editar esse arquivo localmente e não commitar a mudança.
 - **Um bot, um processo.** Por isso cada pessoa usa o próprio bot.
 - **Nome de sessão fixo:** a sessão se chama sempre `relay-vrx` (definido em `src/launcher.ts`). No mesmo PC, um segundo relay nem abre: o `relay start` recusa com "Já está rodando". Em dois PCs na mesma conta Claude, aparecem duas sessões com o mesmo nome no app, e fica difícil saber qual é qual.
