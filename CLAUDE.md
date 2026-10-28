@@ -22,7 +22,12 @@ Vale para QUALQUER canal (Telegram, app, terminal). Toda tarefa termina com este
 ## O que é
 Sistema pessoal para eu (Pedro) controlar o Claude Code pelo celular: pedir tarefas por texto ou voz no Telegram, aprovar ações e ver previews, com o PC rodando em casa. Depois, modelos baratos farão o trabalho braçal sob revisão do Claude. O orquestrador tem a persona **Bison**.
 Histórico e decisões: `docs/CONTEXTO.md` (contexto completo) e `docs/NOTES.md` (registro dos passos). Fases 2 a 4: `docs/PLANO-ORIGINAL.md`. Leia antes de mudar a arquitetura.
-Antes de qualquer `git push`: revisar `docs/` (IPs da tailnet 100.x e nome `*.ts.net` estão em `docs/NOTES.md`). Hoje o repositório não tem remote.
+Antes de qualquer `git push`: revisar `docs/` e confirmar que não há IP da tailnet (100.x) nem nome `*.ts.net` reais (hoje estão mascarados, como `<IP-PC>` e `<NOME>.ts.net`). Os valores reais existem só no histórico da branch local `fase-1-acesso-remoto`: nunca dar push dela. O repositório tem remote `origin` num GitHub privado; o push continua exigindo meu OK.
+
+## Estado em 28/10
+- Fase 1 (relay pelo Telegram): aceita.
+- Fase 2: Braço (MCP `braco`, modelos baratos) construído, ainda sem chave de API configurada.
+- Repositório: no GitHub, privado. Matheus ainda não foi convidado; não convide sem meu OK.
 
 ## Quem sou
 Fundador não técnico, designer de origem. Escreva em português do Brasil, frases curtas, sem jargão. Quando um termo técnico for inevitável, explique em uma frase, de preferência com uma analogia do dia a dia ou de negócio. Se algo que eu pedir for ruim, caro ou arriscado, diga e proponha alternativa.
