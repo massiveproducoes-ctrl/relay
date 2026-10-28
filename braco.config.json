@@ -1,0 +1,9 @@
+{
+  "_nota": "Sem segredo aqui. A chave fica em ~/.vrx-relay/braco.env. Preço = horário de pico do deepseek-flash (pior caso), conferido em 24/10/2026.",
+  "baseUrl": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "allowedHosts": ["api.deepseek.com"],
+  "priceUsdPerM": { "input": 0.3, "output": 1.2 },
+  "timeoutMs": 120000,
+  "limits": { "maxFiles": 3, "maxTotalBytes": 65536 }
+}

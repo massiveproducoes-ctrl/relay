@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "defaultMode": "default",
+    "allow": [
+      "Bash(node src/transcribe-cli.ts *)"
+    ],
+    "deny": [
+      "Bash(rm *)",
+      "Bash(rmdir *)",
+      "Bash(del *)",
+      "Bash(git push *)",
+      "Bash(git reset --hard *)",
+      "Bash(npm publish *)",
+      "Bash(npm install -g *)",
+      "Bash(npm i -g *)",
+      "Bash(*deploy*)",
+      "PowerShell(Remove-Item *)",
+      "PowerShell(rm *)",
+      "PowerShell(rmdir *)",
+      "PowerShell(del *)",
+      "PowerShell(git push *)",
+      "PowerShell(git reset --hard *)",
+      "PowerShell(npm publish *)",
+      "PowerShell(npm install -g *)",
+      "PowerShell(npm i -g *)",
+      "PowerShell(*deploy*)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "node src/stop-hook.ts", "timeout": 10 } ] }
+    ]
+  }
+}

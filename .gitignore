@@ -1,0 +1,8 @@
+node_modules/
+.env
+.env.*
+_refs/
+.claude/settings.local.json
+.venv/
+__pycache__/
+test/audio/

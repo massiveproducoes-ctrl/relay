@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "braco": {
+      "command": "node",
+      "args": ["--disable-warning=ExperimentalWarning", "C:\\dev\\vrx-relay\\src\\braco\\server.ts"]
+    }
+  }
+}
