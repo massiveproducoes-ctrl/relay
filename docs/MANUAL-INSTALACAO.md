@@ -106,7 +106,12 @@ Para o último item, rode `npm test` no PowerShell dentro de `C:\dev\vrx-relay`,
 - Comandos com barra (`/mcp`, `/plugin`, `/config`) e confirmações de pasta ou de servidor MCP só funcionam no terminal do PC, não chegam ao celular.
 - A permissão padrão do projeto é **manual**: toda ação que precisa de aprovação aparece no Telegram ou no app.
 - Ações proibidas pelo projeto, mesmo aprovadas: apagar arquivos (`rm`, `del`, `Remove-Item`), `git push`, `git reset --hard`, `npm publish`, instalação global e deploy. Se uma tarefa exigir alguma delas, pare e fale com o Pedro.
-- Isso inclui o **seu** `git push`: ele também é bloqueado no seu clone, de propósito. Não tente contornar. Combine com o Pedro como o seu trabalho chega ao GitHub.
+- Isso inclui o **seu** `git push`: ele também é bloqueado no seu clone, de propósito. A regra de envio do seu trabalho:
+  1. Trabalhe sempre numa branch sua (`matheus/tarefa-x`), nunca no `main`. Faça commit nela.
+  2. Para enviar, digite você mesmo no prompt do Claude, com o `!` na frente: `! git push origin matheus/tarefa-x`. O Claude não envia por você.
+  3. Avise o Pedro. Só ele junta o seu trabalho ao `main`, pelo GitHub, depois de revisar.
+  4. Nunca envie para o `main` e nunca use `--force`.
+  Para isso o Pedro precisa te dar permissão de escrita no repositório.
 
 ## 8. O que não fazer
 
