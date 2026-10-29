@@ -131,6 +131,25 @@ Campo de testes do Remote Control: `C:\dev\relay-piloto` (não construir o relay
   - Ligado (24/10, 17:19): pré-aprovado por `"enabledMcpjsonServers": ["braco"]` em `.claude/settings.local.json` (fora do git; chave confirmada na doc oficial, escopo "Any file"), sem precisar do terminal. Reinício pelo vigia: fechar a janela com `taskkill` agendado. 1ª tentativa (`Start-Process`) não rodou: o processo morreu junto com o comando; 2ª (`Win32_Process Create`, processo independente) funcionou. Na sessão nova, `braco_models` → `deepseek-flash`, `https://api.deepseek.com`, chave ausente; `braco_usage` → vazio. Passou. Observação: o aviso de religamento falhou ("sem rede ou Telegram fora do ar", 20:19:22Z), um segundo depois de religar; causa não investigada.
 - Etapa 5 (24/10): skill `.claude/skills/delegar-braco/SKILL.md` (quando delegar, como montar o pedido, revisão obrigatória na volta com `git apply --check`, testes e custo no fechamento; sem chave = não delega). Carregou na sessão sem reiniciar. Falta para o aceite da Fase 2: chave (gasto adiado), mini-teste com 10 tarefas reais e governor-lite.
 
+## Estado em 28 e 29/10
+**Feito**
+- Repositório no GitHub privado (`massiveproducoes-ctrl/relay`), `main` protegida: exige pull request, 0 aprovações, sem force push, sem apagar.
+- `CLAUDE.md` atualizado (PR mesclado), `docs/WORKTREES.md` e `docs/COLABORACAO.md` criados, `docs/MANUAL-INSTALACAO.md` pronto para instalação em outro PC.
+- Argon roda pelo `agy -p` (modelo `gemini-4-argon-low`), sem `--dangerously-skip-permissions`. Cada chamada tem custo fixo de cerca de 6,8 mil tokens de entrada.
+- Visão do Relay e planilha 5W2H no Drive (pasta RELAY).
+
+**Decisões**
+- Telegram congelado: só correção de erro, sem funcionalidade nova. Serve de aviso até o painel próprio substituir.
+- Foto do Bison e `personas/STYLE.md` saem da fila.
+- Front-end próprio (painel para celular e PC) fica como Sprint 2. Rascunho no Drive.
+- Cockpit continua em `autoplus-git/vaca-roxa-cockpit`. A transferência fica para depois.
+- O Pedro toca a Sprint 1 sozinho por enquanto. Tarefas do Matheus continuam atribuídas a ele.
+
+**Aberto**
+- Instalar o Relay em outro PC, kickoff e convite no GitHub (detalhes no Drive).
+- Chave do DeepSeek e mini-teste do Braço.
+- Testes de suspensão do PC e de queda de Wi-Fi. Aviso de religamento que falhou em 24/10.
+
 ## Pendências
 - Suspensão e retorno da sessão no celular.
 - ~~`claude --version`~~: 2.1.303 em 2026-10-18 (atende push mobile 2.1.110+, Remote Control 2.1.51+, Channels 2.1.80+).
