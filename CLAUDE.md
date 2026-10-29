@@ -25,9 +25,11 @@ Histórico e decisões: `docs/CONTEXTO.md` (contexto completo) e `docs/NOTES.md`
 Antes de qualquer `git push`: revisar `docs/` e confirmar que não há IP da tailnet (100.x) nem nome `*.ts.net` reais (hoje estão mascarados, como `<IP-PC>` e `<NOME>.ts.net`). Os valores reais existem só no histórico da branch local `fase-1-acesso-remoto`: nunca dar push dela. O repositório tem remote `origin` num GitHub privado; o push continua exigindo meu OK.
 
 ## Estado em 28/10
-- Fase 1 (relay pelo Telegram): aceita.
+- Fase 1 (relay pelo Telegram): aceita em 24/10.
 - Fase 2: Braço (MCP `braco`, modelos baratos) construído, ainda sem chave de API configurada.
-- Repositório: no GitHub, privado. Matheus ainda não foi convidado; não convide sem meu OK.
+- Repositório: no GitHub, privado, com a `main` protegida por pull request. Matheus ainda não foi convidado; não convide sem meu OK.
+- Argon roda pelo `agy -p`, nível low, sem `--dangerously-skip-permissions`.
+- Estou tocando o projeto sozinho por enquanto. Nenhuma tarefa atribuída ao Matheus conta como concluída.
 
 ## Quem sou
 Fundador não técnico, designer de origem. Escreva em português do Brasil, frases curtas, sem jargão. Quando um termo técnico for inevitável, explique em uma frase, de preferência com uma analogia do dia a dia ou de negócio. Se algo que eu pedir for ruim, caro ou arriscado, diga e proponha alternativa.
