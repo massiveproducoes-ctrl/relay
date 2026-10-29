@@ -6,3 +6,4 @@ _refs/
 .venv/
 __pycache__/
 test/audio/
+!.env.example
