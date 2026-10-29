@@ -144,6 +144,8 @@ Campo de testes do Remote Control: `C:\dev\relay-piloto` (não construir o relay
 - Front-end próprio (painel para celular e PC) fica como Sprint 2. Rascunho no Drive.
 - Cockpit continua em `autoplus-git/vaca-roxa-cockpit`. A transferência fica para depois.
 - O Pedro toca a Sprint 1 sozinho por enquanto. Tarefas do Matheus continuam atribuídas a ele.
+- O Relay deve funcionar com o PC desligado (decisão do Pedro, 29/10). Isso exige um servidor, com custo mensal e a sessão do Claude Code lá; entra no rascunho da Sprint 2. Hoje o Relay depende do PC ligado (keep-awake, janela do Claude e vigia).
+- Meta de uso longe do PC: no mínimo 16 horas por semana (por exemplo, segunda e sexta livres), segundo o Pedro.
 - Regra de pull request na `main`: desligada em 29/10 pelo Pedro, porque atrapalhava o trabalho sozinho (a linha "Feito" acima registra o estado de 28/10). Push direto na `main` testado e aceito. Religar quando o Matheus entrar, com 1 aprovação (ver `docs/COLABORACAO.md`).
 
 **Aberto**
