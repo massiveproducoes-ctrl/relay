@@ -150,6 +150,12 @@ Campo de testes do Remote Control: `C:\dev\relay-piloto` (não construir o relay
 - Chave do DeepSeek e mini-teste do Braço.
 - Testes de suspensão do PC e de queda de Wi-Fi. Aviso de religamento que falhou em 24/10.
 
+**Segurança do repositório (29/10)**
+- `.env.example` criado: mostra onde ficam os segredos (fora da pasta do projeto) e nunca guarda valor. O `.gitignore` libera só esse arquivo.
+- Varredura por padrões no histórico da `main`: sem chave, token nem arquivo de credenciais.
+- `gitleaks` 8.30.1 instalado com OK do Pedro (`winget install --id Gitleaks.Gitleaks --version 8.30.1 --source winget`; MIT). Desfazer: `winget uninstall --id Gitleaks.Gitleaks`. Varredura de leitura nos dois repositórios (relay: 12 commits; cockpit: 9): nenhum achado. Limite: ele acha formatos de chave conhecidos, não senhas comuns escritas no código.
+- Cockpit (`autoplus-git/vaca-roxa-cockpit`, `main`): `next` 16.4.3, `next-auth` 4.24.15, `npm audit` em 0. Senha tirada do código; o login lê `AUTH_USER_EMAIL` e `AUTH_USER_PASSWORD_HASH` do ambiente. A senha antiga ainda está no histórico dele: trocá-la onde valer. Avaliação técnica em `docs/COCKPIT-APROVEITAR.md`.
+
 ## Pendências
 - Suspensão e retorno da sessão no celular.
 - ~~`claude --version`~~: 2.1.303 em 2026-10-18 (atende push mobile 2.1.110+, Remote Control 2.1.51+, Channels 2.1.80+).
