@@ -11,7 +11,7 @@ Proposta do Pedro, a ser aprovada pelo Matheus.
 - Quando o Matheus entrar, subir para 1 aprovação.
 
 ## Mensagem de commit
-- Verbo no infinitivo, uma linha, em português.
+- Verbo no presente (ele atualiza, ele cria), uma linha, em português.
 - Exemplo: `docs: atualiza estado do projeto`.
 
 ## Regras de segurança
