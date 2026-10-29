@@ -4,11 +4,11 @@ Proposta do Pedro, a ser aprovada pelo Matheus.
 
 ## Fluxo
 - Cada tarefa vira uma branch (ou worktree), um commit claro e um pull request para a `main`.
-- Ninguém dá push direto na `main`.
+- Hoje, com só o Pedro ativo, a regra de pull request na `main` está desligada e o Pedro pode dar push direto.
+- Quando o Matheus entrar, ninguém dá push direto na `main`.
 
 ## Revisão
-- Hoje a `main` exige pull request com 0 aprovações, porque só o Pedro está ativo.
-- Quando o Matheus entrar, subir para 1 aprovação.
+- Quando o Matheus entrar, religar a regra de pull request na `main`, com 1 aprovação.
 
 ## Mensagem de commit
 - Verbo no presente (ele atualiza, ele cria), uma linha, em português.
