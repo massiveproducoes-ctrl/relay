@@ -24,12 +24,13 @@ Sistema pessoal para eu (Pedro) controlar o Claude Code pelo celular: pedir tare
 Histórico e decisões: `docs/CONTEXTO.md` (contexto completo) e `docs/NOTES.md` (registro dos passos). Fases 2 a 4: `docs/PLANO-ORIGINAL.md`. Leia antes de mudar a arquitetura.
 Antes de qualquer `git push`: revisar `docs/` e confirmar que não há IP da tailnet (100.x) nem nome `*.ts.net` reais (hoje estão mascarados, como `<IP-PC>` e `<NOME>.ts.net`). Os valores reais existem só no histórico da branch local `fase-1-acesso-remoto`: nunca dar push dela. O repositório tem remote `origin` num GitHub privado; o push continua exigindo meu OK.
 
-## Estado em 28/10
+## Estado em 31/10
 - Fase 1 (relay pelo Telegram): aceita em 24/10.
 - Fase 2: Braço (MCP `braco`, modelos baratos) construído, ainda sem chave de API configurada.
-- Repositório: no GitHub, privado. A regra de pull request na `main` está desligada enquanto trabalho sozinho; religar quando o Matheus entrar. Matheus ainda não foi convidado; não convide sem meu OK.
+- Repositório: `massiveproducoes-ctrl/relay` no GitHub, privado desde 31/10 (esteve público até então). Checagem de segredos feita pelo Pedro em 31/10, sem achados. A regra de pull request na `main` está desligada enquanto o Relay for só meu; religar se houver novo colaborador.
+- Matheus saiu do VRX Relay em 31/10/2026. Não convide ele para o projeto sem decisão nova minha. Pendente: remover o acesso dele ao repositório e à pasta RELAY no Drive.
 - Argon roda pelo `agy -p`, nível low, sem `--dangerously-skip-permissions`.
-- Estou tocando o projeto sozinho por enquanto. Nenhuma tarefa atribuída ao Matheus conta como concluída.
+- O Relay é tocado só por mim desde 31/10/2026.
 
 ## Quem sou
 Fundador não técnico, designer de origem. Escreva em português do Brasil, frases curtas, sem jargão. Quando um termo técnico for inevitável, explique em uma frase, de preferência com uma analogia do dia a dia ou de negócio. Se algo que eu pedir for ruim, caro ou arriscado, diga e proponha alternativa.
